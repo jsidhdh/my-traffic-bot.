@@ -1,0 +1,28 @@
+name: Noon Auto Bot
+
+on:
+  workflow_dispatch: # هذا يخليك تشغل البوت يدوياً بضغطة زر
+  schedule:
+    - cron: '0 */12 * * *' # يشتغل تلقائياً كل 12 ساعة
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4
+
+      - name: Run Python Script
+        env:
+          BLOG_ID: ${{ secrets.BLOG_ID }}
+          API_KEY: ${{ secrets.API_KEY }}
+        run: python main.py
