@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 ‎# --- إعداداتك الخاصة ---
 BLOG_ID = "7821854519823506376"
-API_KEY = "http://27304067439-hntv8ncnde7a90ot5d9d8bjka4f93a7l.apps.googleusercontent.com"
+API_KEY = "‏AIzaSyCfehr8CC_vNLVjahWuKGUEpzrrQ2Xfbcg"
 ‎# رابط المنتج اللي أرسلته
 PRODUCT_URL = "https://www.noon.com/uae-en/N46787424A/p/"
 
