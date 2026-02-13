@@ -2,8 +2,7 @@ import os, requests
 
 def publish():
     bid = os.getenv('7821854519823506376')
-    key = os.getenv('
-‏AIzaSyCfehr8CC_vNLVjahWuKGUEpzrrQ2Xfbcg')
+    key = os.getenv('‏AIzaSyCfehr8CC_vNLVjahWuKGUEpzrrQ2Xfbcg')
     
     # Data List
     prods = [
